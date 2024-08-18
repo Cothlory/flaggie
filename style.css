@@ -1,0 +1,39 @@
+#field-container {
+    margin: 10px 0px;
+}
+
+.field {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    td {
+        border: 1px solid black;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+    }
+}
+
+.player {
+    background-color: black;
+}
+
+.flag-normal {
+    background-image: url('./assets/poop_n.png');
+}
+
+.flag-hard {
+    background-image: url('./assets/poop_h.png');
+}
+
+.flag-soft {
+    background-image: url('./assets/poop_s.png');
+}
+
+.flag-normal, .flag-hard, .flag-soft {
+    background-size: contain;
+    background-repeat: no-repeat;
+    &.player {
+        background-color: #ff0000;
+    }
+}
